@@ -42,8 +42,8 @@ static unsigned int tripleclicktimeout = 600;
 int allowaltscreen = 1;
 
 /* frames per second st should at maximum draw to the screen */
-static unsigned int xfps = 120;
-static unsigned int actionfps = 30;
+static unsigned int xfps = 600;
+static unsigned int actionfps = 600;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
@@ -85,30 +85,40 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
+	/* black */
 	"#282828",
+  /* red */
 	"#cc241d",
+  /* green */
 	"#98971a",
+  /* yellow */
 	"#d79921",
+  /* blue */
 	"#458588",
+  /* purple */
 	"#b16286",
+  /* cyan */
 	"#689d6a",
+	/* white */
 	"#ebdbb2",
 
 	/* 8 bright colors */
+  /* black */
 	"#3c3836",
+  /* red */
 	"#fb4934",
+  /* green */
 	"#b8bb26",
+  /* yellow */
 	"#fabd2f",
-	"#5c5cff",
+  /* blue */
+	"#83a598",
+  /* purple */
 	"#d3869b",
+  /* cyan */
 	"#8ec07c",
+  /* white */
 	"#a89984",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
 };
 
 
