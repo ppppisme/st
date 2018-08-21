@@ -683,6 +683,8 @@ cresize(int width, int height)
 	col = (win.w - 2 * borderpx) / win.cw;
 	row = (win.h - 2 * borderpx) / win.ch;
 
+	borderpx = ceilf(borderchars * win.cw);
+
 	tresize(col, row);
 	xresize(col, row);
 	ttyresize(win.tw, win.th);
@@ -962,6 +964,8 @@ xloadfonts(char *fontstr, double fontsize)
 	win.cw = ceilf(dc.font.width * cwscale);
 	win.ch = ceilf(dc.font.height * chscale);
 	win.cyo = ceilf(dc.font.height * (chscale - 1) / 2);
+
+	borderpx = ceilf(borderchars * win.cw);
 
 	borderpx = ceilf(borderchars * win.cw);
 
