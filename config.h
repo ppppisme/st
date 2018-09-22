@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack-12:antialias=true:autohint=true";
+static char *font = "Hack-8:antialias=true:autohint=true";
 static int borderchars = 2;
 
 /*
@@ -25,7 +25,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 1.0;
-static float chscale = 1.2;
+static float chscale = 1.1;
 
 /*
  * word delimiter string
@@ -42,8 +42,8 @@ static unsigned int tripleclicktimeout = 600;
 int allowaltscreen = 1;
 
 /* frames per second st should at maximum draw to the screen */
-static unsigned int xfps = 600;
-static unsigned int actionfps = 600;
+static unsigned int xfps = 30;
+static unsigned int actionfps = 120;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
