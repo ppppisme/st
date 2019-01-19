@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Tamzen-10:antialias=true:autohint=true";
+static char *font = "Hack-8:antialias=true:autohint=true";
 static int borderchars = 2;
 
 /*
@@ -49,7 +49,7 @@ static unsigned int actionfps = 120;
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-static unsigned int blinktimeout = 800;
+static unsigned int blinktimeout = 0;
 
 /*
  * thickness of underline and bar cursors
