@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack-8:antialias=true:autohint=true";
+static char *font = "Tamzen-10:antialias=true:autohint=true";
 static int borderchars = 2;
 
 /*
